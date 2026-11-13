@@ -1,0 +1,211 @@
+
+/* ESTILOS GENERALES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #edf1f7;
+    color: #26364f;
+}
+
+/* ENCABEZADO */
+
+.encabezado {
+    background-color: #202d49;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 3px solid #8980d5;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+nav {
+    background-color: #354B70;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 16px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #8980D5;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* JUEGOS */
+
+.juegos {
+    width: 100%;
+}
+
+/* CAJAS DE ARTÍCULOS */
+
+article {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    border-left: 4px solid transparent;
+    box-shadow: 0 3px 12px rgba(36, 48, 75, 0.06);
+    transition: 0.3s;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+article:hover {
+    transform: translateY(-4px) scale(1.01);
+    border-left: 4px solid #8980d5;
+    box-shadow: 0 8px 20px rgba(36, 48, 75, 0.12);
+}
+
+/* IMÁGENES */
+
+article img {
+    width: 180px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 9px;
+    flex-shrink: 0;
+}
+
+/* TEXTOS */
+
+article h2 {
+    color: #354b70;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+article p {
+    color: #727e91;
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* PRÓXIMAMENTE */
+
+.proximamente {
+    margin-top: 65px;
+    padding-top: 25px;
+    border-top: 1px solid #d4dbe8;
+}
+
+.proximamente h1 {
+    color: #354b70;
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.proximamente article:hover {
+    border-left-color: #d3ae6b;
+}
+
+/* JUEGOS ANTIGUOS */
+
+.juegosAntiguos {
+    margin-top: 65px;
+    padding-top: 25px;
+    border-top: 1px solid #d4dbe8;
+}
+
+.juegosAntiguos h1 {
+    color: #354b70;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.juegosAntiguos article:hover {
+    border-left-color: #79a9c8;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #202d49;
+    color: #c3cce0;
+    text-align: center;
+    padding: 22px;
+    margin-top: 60px;
+    font-size: 13px;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 700px) {
+
+    main {
+        width: 92%;
+        margin-top: 25px;
+    }
+
+    article {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    article img {
+        width: 110px;
+        height: 120px;
+    }
+
+    article h2 {
+        font-size: 17px;
+    }
+
+    article p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .proximamente h1,
+    .juegosAntiguos h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        gap: 8px;
+        padding: 12px 5px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
